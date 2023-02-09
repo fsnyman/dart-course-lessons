@@ -1,2 +1,2 @@
 # dart-course-lessons
-Lessons Dart exercises from the Flutter and Dart | Flutter Dart Programming from Scratch course
+The output of the dart exercises done along my dart and flutter developer journey. Look out for the flutter repo later on.  
