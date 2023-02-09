@@ -1,2 +1,2 @@
 # dart-course-lessons
-Dart exercises along my dart and flutter journey. Look out for the Flutter repo later on.  
+The output of the dart exercises done along my dart and flutter developer journey. Look out for the flutter repo later on.  
