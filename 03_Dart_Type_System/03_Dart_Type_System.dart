@@ -1,4 +1,4 @@
-// This is a Dart file where I tested the yype system in Dart.
+// This is a Dart file where I tested the type system in Dart.
 // ------------------- dynamic -------------------
 void main() {
   dynamic name = 'Francois';
