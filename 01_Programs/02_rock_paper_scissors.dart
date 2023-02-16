@@ -9,7 +9,6 @@ enum Hands {
 
 //A function that takes two strings and prints the outcome of the game
 void whoWon(String userHandSend, String computerHandSend) {
-  String winner = 'Unknown';
   if (userHandSend == computerHandSend) {
     print('It is a Tie');
   } else if (userHandSend == 'rock' && computerHandSend == 'scissors') {
