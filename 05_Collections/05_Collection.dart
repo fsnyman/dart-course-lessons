@@ -1,5 +1,38 @@
 // This is a Dart file where I tested collections in Dart.
-// ------------------- Sets -------------------
+// // ------------------- Sets -------------------
+// void main() {
+//   final countries = <String>{'London', 'London', 'London', 'London'};
+//   print(countries); //{London};
+//   countries.add('Cape Town');
+//   countries.addAll({'Amsterdam', 'Paris', 'Paris', 'Paris'});
+//   print(countries); //{London, Cape Town, Amsterdam, Paris}
+//   print('First Country: ${countries.first}'); //First Country: London
+//   print('Is Cape Town in the set: ${countries.contains('Cape Town')}');
+//   //Is Cape Town in the set: true
+//   print('Last Country: ${countries.last}'); //Last Country: Paris
+//   print('Set lenght: ${countries.length}'); //Set lenght: 4
+//   int i = 0;
+//   for (String country in countries) {
+//     if (country == 'Cape Town') {
+//       print(
+//           'Cape Town is at position ${i + 1} in the set. Not ordered my ass!');
+//       // Cape Town is at position 2 in the set. Not ordered my ass!
+//       break;
+//     } //if
+//     i++;
+//   } //for loop
+// } //main
+
+//--- Union, Intersection, Difference, Subset, Superset ---
+void main() {
+  var africanCountries = {'South Africa', 'Kenya', 'Zimbabwe'};
+  var europeanCountries = {'France', 'Germany', 'Italy', 'South Africa'};
+  print(africanCountries.union(europeanCountries));
+  // {South Africa, Kenya, Zimbabwe, France, Germany, Italy}
+  // Note South Africa is only printed once
+  print(africanCountries.intersection(europeanCountries)); // {South Africa}
+  print(africanCountries.difference(europeanCountries)); // {Kenya, Zimbabwe}
+}
 
 // // ------------------- Lists -------------------
 // ---- Basics ----
