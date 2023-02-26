@@ -11,6 +11,7 @@ enum Hands {
 void whoWon(String userHandSend, String computerHandSend) {
   if (userHandSend == computerHandSend) {
     print('It is a Tie');
+    //All of the wins could also be done with one if statement and one else statement for the losses
   } else if (userHandSend == 'rock' && computerHandSend == 'scissors') {
     print('You won!');
   } else if (userHandSend == 'rock' && computerHandSend == 'paper') {
@@ -27,25 +28,23 @@ void whoWon(String userHandSend, String computerHandSend) {
 } //whoWon main
 
 void main() {
+  String userChoice = '';
   // initialize the game loop
-  String userChoice = '', userHand = '';
   while (true) {
     // choose a random hand from the enum
     var computerHand = Hands.values[Random().nextInt(3)];
 
     // ask the user to choose a hand
-    print(
+    stdout.write(
         '\n\nChoose a hand: (r)ock, (p)aper, (s)cissors or enter Q to Quit: ');
     userChoice = stdin.readLineSync()!; //why the !? A:
 
     switch (userChoice.toLowerCase()) {
       case ('r'):
-        userHand = 'rock';
         whoWon('rock', computerHand.name);
         print('You chose rock and the computer chose ${computerHand.name}');
         break;
       case 'p':
-        userHand = 'paper';
         whoWon('paper', computerHand.name);
         print('You chose paper and the computer chose ${computerHand.name}');
         break;
